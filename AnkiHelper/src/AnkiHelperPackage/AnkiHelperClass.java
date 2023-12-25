@@ -1,4 +1,4 @@
-package AnkiHelperPackage;
+package AnkiHelper.src.AnkiHelperPackage;
 import java.util.*;
 import java.io.*;
 public class AnkiHelperClass {
