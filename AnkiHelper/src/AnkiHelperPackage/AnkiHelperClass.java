@@ -30,6 +30,7 @@ public class AnkiHelperClass {
             }
         } catch (IOException e) {
             e.printStackTrace();
+			System.out.println("Error opening the file. Make sure the 'input.txt' is in the root folder of the project directory. Also make sure read/write permissions are enabled.");
         }
 		
 	}
