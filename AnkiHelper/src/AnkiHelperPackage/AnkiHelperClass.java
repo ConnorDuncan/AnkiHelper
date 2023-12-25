@@ -14,9 +14,9 @@ public class AnkiHelperClass {
             		int index = leftAndRight[2].indexOf('(');
             		leftAndRight[1] = leftAndRight[2].substring(0, index - 1);
             		leftAndRight[2] = leftAndRight[2].substring(index);
-            		System.out.println(leftAndRight[0]); // This will be index 1 for output
-            		System.out.println(leftAndRight[1]); // This will be index 0 for output
-            		System.out.println(leftAndRight[2]); // This will be index 2 for output
+            		//System.out.println(leftAndRight[0]); // This will be index 1 for output
+            		//System.out.println(leftAndRight[1]); // This will be index 0 for output
+            		//System.out.println(leftAndRight[2]); // This will be index 2 for output
             		String newLine = leftAndRight[1] + "\t" + leftAndRight[0] + " " + leftAndRight[2];
             		bufferedWriter.write(newLine);
             		bufferedWriter.newLine();
