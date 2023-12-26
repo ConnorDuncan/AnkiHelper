@@ -14,3 +14,5 @@ From Anki, export the card deck as a "Notes in Plain Text .txt" file with only t
 
 
 This project is intended to be used for language studying, so someone is able to create one deck rather than two. For example, for Japanese, Kanji would be x, Hiragana would be y, and English meaning would be z.
+
+Note: Doesn't work with media/audio. I don't use this feature and have no reason to work on it.
