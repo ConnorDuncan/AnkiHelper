@@ -9,15 +9,14 @@ public class AnkiHelperClass {
             String line;
             int i = 0;
             while ((line = bufferedReader.readLine()) != null) {
-            	if(i >= 2) {
+            	if(i >= 3) {
             		String[] leftAndRight = line.split("\t");
-            		int index = leftAndRight[2].indexOf('(');
-            		leftAndRight[1] = leftAndRight[2].substring(0, index - 1);
-            		leftAndRight[2] = leftAndRight[2].substring(index);
+					String english = leftAndRight[1].substring(leftAndRight[1].indexOf('(') + 1, leftAndRight[1].indexOf(')'));
+            		leftAndRight[1] = leftAndRight[1].substring(0, leftAndRight[1].indexOf('('));
             		//System.out.println(leftAndRight[0]); // This will be index 1 for output
             		//System.out.println(leftAndRight[1]); // This will be index 0 for output
             		//System.out.println(leftAndRight[2]); // This will be index 2 for output
-            		String newLine = leftAndRight[1] + "\t" + leftAndRight[0] + " " + leftAndRight[2];
+            		String newLine = english + "\t" + leftAndRight[0] + " (" + leftAndRight[1].substring(0, leftAndRight[1].length() - 1) + ")";
             		bufferedWriter.write(newLine);
             		bufferedWriter.newLine();
             		i++;
